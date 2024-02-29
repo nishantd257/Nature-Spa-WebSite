@@ -1,0 +1,1015 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: url(slider-banner-2.jpg) no-repeat center center/cover;
+}
+
+nav {
+  padding: 0 50px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+}
+
+.navbar-one {
+  background-color: #09093e;
+  color: white;
+  padding: 10px 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+.left>div+div {
+  margin-left: 40px;
+}
+
+.right>div {
+  margin-right: 40px;
+}
+
+.left>div:hover,
+.right>div:hover {
+  color: darkgray;
+  transition: all 0.5s;
+}
+
+.navbar-two {
+  background-color: white;
+  padding: 10px 0;
+  height: 70px;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 40px;
+  position: absolute;
+}
+
+.navbar-two flex {
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-left: 30px;
+  color: black;
+  font-weight: 400;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+a:hover::after {
+  background-color: darkblue;
+}
+
+.button {
+  background-color: skyblue;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  display: inline-block;
+  color: white;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.banner-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.arrow-left,
+.arrow-right {
+  background-color: skyblue;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 30px;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  font-size: 33px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+
+/* Ends */
+
+
+/*.services Section  */
+
+#What-We-Do .heading span {
+  color: skyblue;
+}
+
+
+.hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#What-We-Do .heading span,
+#What-We-Do .heading h2,
+#What-We-Do .heading p {
+  margin: 8px 0;
+}
+
+
+.hr-line,
+.hr-line-1,
+.hr-line-wide {
+  height: 3px;
+  background-color: skyblue;
+  margin: 0 2%;
+
+}
+
+.hr-line {
+  width: 64px;
+  margin-bottom: 5px;
+}
+
+.hr-line-1 {
+  width: 64px;
+  margin-bottom: 5px;
+  margin-left: 33px;
+}
+
+.hr-line-wide {
+  width: 95px;
+}
+
+.heading {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+h2 {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.container {
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 6px solid skyblue;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.service-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+.bottom-button {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.btn-bottom {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bottom:hover {
+  background-color: #555;
+}
+
+/*  Ends here  */
+
+
+
+
+/* About Us Section Styles */
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.image-section {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.overlay img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+}
+
+.content-section {
+  width: 50%;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  margin-left: 30px;
+}
+
+.section-title {
+  color: teal;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  margin-bottom: 20px;
+}
+
+.features-list {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.features-list li i {
+  margin-right: 10px;
+}
+
+.blue-icon {
+  color: skyblue;
+}
+
+.discover-btn {
+  background-color: skyblue;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hr-line,
+.hr-line-1,
+.hr-line-wide {
+  height: 3px;
+  background-color: skyblue;
+  margin: 0 2%;
+}
+
+.hr-line {
+  width: 64px;
+  margin-bottom: 5px;
+}
+
+.hr-line-1 {
+  width: 64px;
+  margin-bottom: 5px;
+  margin-left: 33px;
+}
+
+.hr-line-wide {
+  width: 95px;
+}
+
+/*Ends   */
+
+
+#Why-Choose-Us .heading span {
+  color: skyblue;
+}
+
+.hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#Why-Choose-Us .heading span,
+#Why-Choose-Us .heading h2,
+#Why-Choose-Us .heading h5 {
+  margin: 8px 0;
+}
+
+.hr-line,
+.hr-line-1,
+.hr-line-wide {
+  height: 3px;
+  background-color: skyblue;
+  margin: 0 2%;
+}
+
+.hr-line {
+  width: 64px;
+  margin-bottom: 5px;
+}
+
+.hr-line-1 {
+  width: 64px;
+  margin-bottom: 5px;
+  margin-left: 33px;
+}
+
+.hr-line-wide {
+  width: 95px;
+}
+
+.heading {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.container {
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 6px solid skyblue;
+}
+
+.service-card i {
+  font-size: 48px;
+  color: skyblue;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.bottom-button {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.btn-bottom {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bottom:hover {
+  background-color: #555;
+}
+
+
+/*Ends here   */
+
+
+
+/* Form Section  */
+
+/* Styles for the "Best Quality Service" portion */
+
+.quality-service-container {
+  width: 100%;
+  height: 550px;
+}
+
+.quality-service {
+  position: relative;
+}
+
+.quality-image-container img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  opacity: 0.1;
+  position: absolute;
+}
+
+.quality-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.quality-left {
+  width: 50%;
+}
+
+.quality-right {
+  width: 40%;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.service-heading {
+  font-size: 23px;
+}
+
+.head1 {
+  margin-top: 30px;
+}
+
+.per a1 {
+  margin-top: 20px;
+}
+
+.right-heading,
+.right-subheading {
+  margin-top: 14px;
+}
+
+.form-input {
+  width: 200px;
+  height: 40px;
+  margin: 12px 0;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: 1px solid #15B9D9;
+}
+
+.form-textarea {
+  width: calc(100% - 40px);
+  height: 120px;
+  margin: 12px 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #15B9D9;
+}
+
+.feature-container {
+  margin-top: 20px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  margin-top: 10px;
+}
+
+.feature-title i {
+  color: #15B9D9;
+}
+
+.btn-more-details {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #15B9D9;
+  margin-top: 10px;
+}
+
+
+
+
+/*  form sectionn Ends here */
+
+/* Meet Our Team Section */
+
+#Meet-Our-Team .heading span {
+  color: skyblue;
+}
+
+#Meet-Our-Team .hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#Meet-Our-Team .heading span,
+#Meet-Our-Team .heading h2 {
+  margin: 8px 0;
+}
+
+#Meet-Our-Team .hr-line,
+#Meet-Our-Team .hr-line-1,
+#Meet-Our-Team .hr-line-wide {
+  height: 3px;
+  background-color: skyblue;
+  margin: 0 2%;
+}
+
+#Meet-Our-Team .hr-line {
+  width: 64px;
+  margin-bottom: 5px;
+}
+
+#Meet-Our-Team .hr-line-1 {
+  width: 64px;
+  margin-bottom: 5px;
+  margin-left: 33px;
+}
+
+#Meet-Our-Team .hr-line-wide {
+  width: 95px;
+}
+
+#Meet-Our-Team .heading {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Meet-Our-Team h2 {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#Meet-Our-Team .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#Meet-Our-Team .service-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 6px solid skyblue;
+  text-align: center;
+}
+
+#Meet-Our-Team .service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#Meet-Our-Team .service-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: red;
+}
+
+#Meet-Our-Team .service-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Meet our team section Ends here  */
+
+
+/*Testimonial section starts here   */
+#TESTIMONIAL {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testi-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(slider-banner-1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.testi-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(78, 176, 179, 0.795);
+  z-index: -1;
+}
+
+.testi-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.testimonial {
+  max-width: auto;
+  width: 100%;
+  background-color: transparent;
+}
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*testimonial section ends here   */
+
+
+/*Our Blog Starts here    */
+.blog {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.blog-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog .heading span {
+  color: skyblue;
+  font-size: 20px;
+}
+
+.blog-heading h1 {
+  font-size: 2.5rem;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  margin: 20px;
+  background-color: #fff;
+  border: 2px solid #87CEEB;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-text {
+  padding: 20px;
+}
+
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: skyblue;
+  margin-bottom: 10px;
+  text-align: left;
+  border-radius: 6px solid skyblue;
+}
+
+.blog-text span {
+  color: #87CEEB;
+  font-size: 0.9rem;
+}
+
+.blog-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.blog-text a {
+  color: #87CEEB;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.blog-text a:hover {
+  color: #555;
+}
+
+.blog-text .blog-title {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.blog-text p::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f33c3c;
+  margin-right: 5px;
+}
+
+.blog .heading span i {
+  margin-right: 5px;
+}
+
+/*Our Blog Ends  here    */
+
+
+/* Footer Styles */
+
+footer {
+  background-image: url('slider-banner-2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.footer-info {
+  flex: 1;
+  padding: 0 15px;
+}
+
+nav {
+  flex: 1;
+  padding: 0 15px;
+}
+
+footer h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: #666;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+.footer-contact {
+  flex: 1;
+  text-align: right;
+  padding: 0 15px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 5px;
+}
+
+
+.fa-chevron-right {
+  margin-left: 5px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1e1e43;
+}
+
+.copyright p {
+  color: #666;
+}
+
+.footer-info img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+
+/* Footer Section */
